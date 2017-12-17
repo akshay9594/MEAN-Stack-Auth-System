@@ -1,0 +1,14 @@
+
+<p>Welcome</p>
+  {{#if user.google.id}}
+  <h2 class="fa fa-google-plus"> Google</h2><br>
+  <img src="https://avatars.io/gravatar/<%= user.google.email %>/140" class="img-circle"><br>
+  <strong>name</strong>: {{ user.google.name }}<br>
+  <strong>email</strong>: {{ user.google.email }}<br>
+  {{/if}}
+  
+  {{#if user.username}}
+  <strong>username</strong>: {{ user.username }}<br>
+  <strong>email</strong>: {{ user.email }}<br>
+  <strong>name</strong>: {{ user.name }}
+  {{/if}}
